@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="UFSC">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Coordenador 1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="subcoordenador 1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="estudante 1">
+      <firstName>estudante</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="yuri.souza">
+      <firstName>Yuri</firstName>
+      <lastName>Souza</lastName>
+      <manager>Coordenador 1</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="alvaro.junio">
+      <firstName>Álvaro</firstName>
+      <lastName>Junio</lastName>
+      <title>Dr</title>
+      <jobTitle>Coordenador</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Coordenador">
+      <displayName>Coordenador</displayName>
+    </role>
+    <role name="Estudante">
+      <displayName>Estudante</displayName>
+    </role>
+    <role name="Sub-coordenador">
+      <displayName>Sub-coordenador</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Departamento">
+      <displayName>Departamento</displayName>
+    </group>
+    <group name="Coordenadoria" parentPath="/Departamento">
+      <displayName>Coordenadoria</displayName>
+    </group>
+    <group name="Discencia" parentPath="/Departamento">
+      <displayName>Discencia</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Coordenador 1</userName>
+      <roleName>Coordenador</roleName>
+      <groupName>Coordenadoria</groupName>
+      <groupParentPath>/Departamento</groupParentPath>
+    </membership>
+    <membership>
+      <userName>subcoordenador 1</userName>
+      <roleName>Sub-coordenador</roleName>
+      <groupName>Coordenadoria</groupName>
+      <groupParentPath>/Departamento</groupParentPath>
+    </membership>
+    <membership>
+      <userName>estudante 1</userName>
+      <roleName>Estudante</roleName>
+      <groupName>Discencia</groupName>
+      <groupParentPath>/Departamento</groupParentPath>
+    </membership>
+    <membership>
+      <userName>yuri.souza</userName>
+      <roleName>Estudante</roleName>
+      <groupName>Discencia</groupName>
+      <groupParentPath>/Departamento</groupParentPath>
+    </membership>
+    <membership>
+      <userName>alvaro.junio</userName>
+      <roleName>Coordenador</roleName>
+      <groupName>Coordenadoria</groupName>
+      <groupParentPath>/Departamento</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

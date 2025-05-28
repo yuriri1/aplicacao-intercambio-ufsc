@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process">
+  <process:MainProcess xmi:id="_ED5MYDEjEfCZHJMDKnrMDw" name="TO_DO_avaliacao_pelo_coordenador" bonitaModelVersion="7.12.0-004">
+    <datatypes xmi:type="process:BooleanType" xmi:id="_ED5MjDEjEfCZHJMDKnrMDw" name="Boolean"/>
+    <datatypes xmi:type="process:DateType" xmi:id="_ED5MjTEjEfCZHJMDKnrMDw" name="Date"/>
+    <datatypes xmi:type="process:IntegerType" xmi:id="_ED5MjjEjEfCZHJMDKnrMDw" name="Integer"/>
+    <datatypes xmi:type="process:LongType" xmi:id="_ED5MjzEjEfCZHJMDKnrMDw" name="Long"/>
+    <datatypes xmi:type="process:DoubleType" xmi:id="_ED5MkDEjEfCZHJMDKnrMDw" name="Double"/>
+    <datatypes xmi:type="process:StringType" xmi:id="_ED5MkTEjEfCZHJMDKnrMDw" name="Text"/>
+    <datatypes xmi:type="process:JavaType" xmi:id="_ED5MkjEjEfCZHJMDKnrMDw" name="Java_object"/>
+    <datatypes xmi:type="process:XMLType" xmi:id="_ED5MkzEjEfCZHJMDKnrMDw" name="XML"/>
+    <datatypes xmi:type="process:BusinessObjectType" xmi:id="_ED5MlDEjEfCZHJMDKnrMDw" name="Business_Object"/>
+  </process:MainProcess>
+  <notation:Diagram xmi:id="_ED5MlTEjEfCZHJMDKnrMDw" type="Process" element="_ED5MYDEjEfCZHJMDKnrMDw" name="MyDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ED5MrTEjEfCZHJMDKnrMDw"/>
+  </notation:Diagram>
+</xmi:XMI>
