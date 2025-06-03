@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
     <businessObjects>
-        <businessObject qualifiedName="com.company.model.P10DadosDoEmail">
+        <businessObject qualifiedName="com.company.model.P10Analise">
             <fields>
-                <field type="STRING" length="255" name="emailAssunto" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="emailData" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="emailRemetente" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="emailCorpo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="analiseOk" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="comentario" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.P10Caso">
+            <fields>
+                <field type="LONG" length="255" name="casoId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="tarefaId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.P10Email">
+            <fields>
+                <field type="LONG" length="255" name="emailNum" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="assunto" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dataEnvio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dataRecebido" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="corpo" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="conteudo" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="conteudoHTML" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="conteudoLimpoHTML" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

@@ -28,3 +28,5 @@ node_modules/
 
 #only used as user preferences
 /database_connectors_properties
+.store/com/bonitasoft/connector/connector-email-reader/2.2-SNAPSHOT/connector-email-reader-2.2-SNAPSHOT.jar
+.store/com/bonitasoft/connector/connector-email-reader/2.2-SNAPSHOT/connector-email-reader-2.2-SNAPSHOT.jar
