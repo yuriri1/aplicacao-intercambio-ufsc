@@ -109,11 +109,6 @@
       <version>1.1.4</version>
     </dependency>
     <dependency>
-      <groupId>com.bonitasoft.connector</groupId>
-      <artifactId>connector-email-reader</artifactId>
-      <version>2.2-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>org.bonitasoft.actorfilter</groupId>
       <artifactId>bonita-actorfilter-same-task-user</artifactId>
       <version>1.0.0</version>
@@ -128,6 +123,11 @@
       <artifactId>bdm-client</artifactId>
       <version>1.0.0</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.bonitasoft.connector</groupId>
+      <artifactId>connector-email-reader</artifactId>
+      <version>2.1</version>
     </dependency>
   </dependencies>
   <build>
