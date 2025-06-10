@@ -46,7 +46,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ibpDl0TPEfC2T4K6-3nh9w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ibpDlkTPEfC2T4K6-3nh9w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_kJoPakTPEfC2T4K6-3nh9w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_pn9q4ETQEfC2T4K6-3nh9w" name="emailView" content="4b612be4-e531-458a-afb6-46a691b59568" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_pn9q4ETQEfC2T4K6-3nh9w" name="newForm" content="fea32951-1c36-4227-8004-5d9b88eab5de" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_kJoPaUTPEfC2T4K6-3nh9w">
             <inputs xmi:type="process:ContractInput" xmi:id="_pegpYETPEfC2T4K6-3nh9w" name="emailInput" type="COMPLEX" dataReference="email" createMode="false">
@@ -293,12 +293,12 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_W7HAMUU-EfC4JIcLCxZP3A" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_W7GZIUU-EfC4JIcLCxZP3A" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W7GZIkU-EfC4JIcLCxZP3A" points="[-22, 14, 332, -265]$[-22, 121, 332, -158]$[-325, 121, 29, -158]$[-325, 254, 29, -25]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W7GZIkU-EfC4JIcLCxZP3A" points="[-22, 14, 332, -265]$[-22, 102, 332, -177]$[-366, 102, -12, -177]$[-366, 254, -12, -25]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_W7IOUEU-EfC4JIcLCxZP3A" id="(1.0,0.6744186046511628)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_ftA6sEU-EfC4JIcLCxZP3A" type="4001" element="_fs-ecEU-EfC4JIcLCxZP3A" source="_WaXDkEU-EfC4JIcLCxZP3A" target="_BIxDgEVlEfClJfNPm6c2vA" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_ftA6s0U-EfC4JIcLCxZP3A" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ftBhwEU-EfC4JIcLCxZP3A" x="-83" y="-38"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ftBhwEU-EfC4JIcLCxZP3A" x="-110" y="-9"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_ftA6sUU-EfC4JIcLCxZP3A" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ftA6skU-EfC4JIcLCxZP3A" points="[22, 0, -83, -263]$[93, 0, -12, -263]$[93, 238, -12, -25]"/>
