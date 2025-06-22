@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "emailView",
   "name" : "emailView",
-  "lastUpdate" : 1750443580915,
+  "lastUpdate" : 1750550467812,
   "rows" : [
     [
       {
@@ -228,7 +228,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Subject"
+                                "value" : "Assunto"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -400,7 +400,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Name"
+                                "value" : "Remetente"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -724,7 +724,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Body"
+                          "value" : "Conteudo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -783,7 +783,117 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 9,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : "context.attachments_ref"
+                  }
+                },
+                "reference" : "667d2144-dee0-4c3a-b346-24582da39ed8",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Faça download do DOCUMENTO para melhor avaliação"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "500d161c-29e3-43eb-a662-b8f30af63070",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "Process document"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "$item"
+                        },
+                        "showPreview" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "5f18a44a-fc6a-446e-8ee8-b67ca05c9165",
+                      "hasValidationError" : false,
+                      "id" : "pbFileViewer"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
                   "lg" : 6
                 },
                 "propertyValues" : {
@@ -831,7 +941,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Review Ok"
+                          "value" : "Learning Agreement adequedo?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -885,12 +995,12 @@
                           "value" : 1
                         },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "formInput.reviewOk"
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Comment"
+                          "value" : "Observações"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -908,12 +1018,12 @@
                           "value" : "formInput.comment"
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : true
+                          "type" : "expression",
+                          "value" : "!formInput.reviewOk"
                         },
                         "allowHTML" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -938,126 +1048,6 @@
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ]
-                ]
-              },
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 3,
-                  "lg" : 6
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : "context.attachments_ref"
-                  }
-                },
-                "reference" : "667d2144-dee0-4c3a-b346-24582da39ed8",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Faça download do DOCUMENTO para melhor avaliação"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "e88a4710-b7bd-4775-9fc4-0b4677be30ba",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "$item"
-                        },
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "5f18a44a-fc6a-446e-8ee8-b67ca05c9165",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer"
                     }
                   ]
                 ]
@@ -1090,7 +1080,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1136,6 +1126,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "33d2b0d6-614f-4deb-af13-2cf19514fb38",
