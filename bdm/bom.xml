@@ -10,6 +10,17 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.course.Course">
+            <fields>
+                <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="center" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="courseLoad" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.email.Email">
             <fields>
                 <field type="LONG" length="255" name="messageNumber" nullable="true" collection="false"/>
@@ -38,6 +49,11 @@
                 <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="enrollment" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isEligible" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="courseID" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="completedHours" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isFI" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isRegular" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="iaa" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
