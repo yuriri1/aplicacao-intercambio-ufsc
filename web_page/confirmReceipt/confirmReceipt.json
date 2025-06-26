@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "sendAgreement",
-  "name" : "sendAgreement",
-  "lastUpdate" : 1750428371348,
+  "id" : "confirmReceipt",
+  "name" : "confirmReceipt",
+  "lastUpdate" : 1750905841717,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8cd8d463-83ca-4a61-9991-f4d956765f8f",
+        "reference" : "e62f7aee-25d4-479f-a0d5-2b7b75e5e640",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "6e19db6e-57bc-4788-9046-0904ea6e130d",
+              "reference" : "9a4b6f27-72fa-411a-8427-fb9f5112bdd7",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "01629530-0bb8-4759-b9f1-afbbfae16f16",
+              "reference" : "bd73baca-579b-4109-9e32-aef80e2c287c",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "b5f7acb2-ff63-4079-a9cd-55c7061d445b",
+        "reference" : "1e47aca8-8873-49af-a731-595e8f6203fb",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "fafd0993-54ab-4acb-9233-d0755d161de4",
+          "reference" : "2be6e736-5876-4e1a-abd7-8a3fc40a21d5",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -131,14 +131,84 @@
               {
                 "type" : "container",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "506a5067-38a1-4a56-a1a2-415d12d47687",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "Process document"
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "context.attachment_ref"
+                        },
+                        "showPreview" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "67a92710-eafb-4941-9efa-76eaeb9fc796",
+                      "hasValidationError" : false,
+                      "id" : "pbFileViewer"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -148,77 +218,35 @@
                     "type" : "constant",
                     "value" : ""
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Confirmar recebimento do Learning Agreement assinado"
+                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.confirmReceipt"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
-                "reference" : "3307ab2e-c564-4897-b33e-1de8b7961276",
+                "reference" : "92df49f5-de9f-4acd-a707-0fb2bcc01f60",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Learning Agreement"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.learningAgreement"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        }
-                      },
-                      "reference" : "341a02f7-9d41-4f8a-a9d5-3dab308ed4bc",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbCheckbox",
+                "description" : ""
               }
             ],
             [
@@ -235,8 +263,8 @@
                     "type" : "variable"
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "!formInput.confirmReceipt"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -294,9 +322,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "fdf265f5-e01d-4fa7-a87b-645632687f0c",
+                "reference" : "beca37fc-5c91-4afa-9cb8-3fd4a8872d40",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -348,7 +397,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7a90a610-7d38-4af9-a4b2-8080da7b7cac",
+                "reference" : "49000f35-54c6-4d99-a60b-67150b282eb6",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -361,16 +410,16 @@
   ],
   "assets" : [
     {
-      "id" : "fa0ad5df-ef69-4bd8-bf8b-a30d666b0301",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "accf8f55-5faa-4497-87ee-973e74cb6f9d",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "feb944dc-96af-4ad2-bd2d-40204f8a411b",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "e147764a-5476-4c27-b0d0-fbe7a8c28f5a",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -388,7 +437,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"learningAgreement\" : null\r",
+        "  \"confirmReceipt\" : false\r",
         "}"
       ],
       "exposed" : false
@@ -412,7 +461,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tlearningAgreement: $data.formInput.learningAgreement",
+        "\tconfirmReceipt: $data.formInput.confirmReceipt",
         "}"
       ],
       "exposed" : false
@@ -433,7 +482,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "1fe7e8c0-c667-4e49-af6d-7b5e93f6ff4c",
+  "uuid" : "efb7cea7-8980-496b-94dc-ccde59895dac",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

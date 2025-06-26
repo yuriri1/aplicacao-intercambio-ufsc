@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "newForm",
-  "name" : "newForm",
-  "lastUpdate" : 1750802463446,
+  "id" : "sinterPath",
+  "name" : "sinterPath",
+  "lastUpdate" : 1750906863489,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "bb127a69-55c4-4f65-a7ad-09d2cb64df98",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -226,7 +235,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Agreement Ok"
+                          "value" : "Contrato Ok?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -235,6 +244,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "agreement.agreementOk"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "f392c0a6-4048-41d9-8dea-6ad7d859b0e7",
@@ -274,12 +291,12 @@
                           "value" : 1
                         },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!agreement.agreementOk"
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Comment"
+                          "value" : "Matrícula"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -294,147 +311,42 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "agreement.comment"
+                          "value" : "student.enrollment"
                         },
                         "required" : {
+                          "type" : "expression",
+                          "value" : "agreement.agreementOk"
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "d8a88abe-7d49-4e8f-b27d-155cb41ba708",
+                      "reference" : "607b4638-11b7-4d25-abad-a525f1b08368",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
                     }
                   ]
                 ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Email Student"
-                  },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.emailStudent"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
-                  }
-                },
-                "reference" : "943f78e2-5373-4758-9f11-fa7bf7f20046",
-                "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Student"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "ca1673da-d72a-4b29-b026-1c03b8e5058a",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
               }
             ],
             [
@@ -474,6 +386,92 @@
                         "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "expression",
+                          "value" : "agreement.agreementOk"
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Email do estudante"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.emailStudent"
+                        },
+                        "required" : {
+                          "type" : "expression",
+                          "value" : "!agreement.agreementOk"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "943f78e2-5373-4758-9f11-fa7bf7f20046",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
@@ -498,12 +496,12 @@
                           "value" : 1
                         },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "agreement.agreementOk"
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Enrollment"
+                          "value" : "Comment"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -518,14 +516,36 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "student.enrollment"
+                          "value" : "agreement.comment"
                         },
                         "required" : {
+                          "type" : "expression",
+                          "value" : "!agreement.agreementOk"
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "607b4638-11b7-4d25-abad-a525f1b08368",
+                      "reference" : "d8a88abe-7d49-4e8f-b27d-155cb41ba708",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""

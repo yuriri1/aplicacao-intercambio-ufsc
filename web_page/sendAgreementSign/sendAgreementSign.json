@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "Confirm",
-  "name" : "Confirm",
-  "lastUpdate" : 1750428706260,
+  "id" : "sendAgreementSign",
+  "name" : "sendAgreementSign",
+  "lastUpdate" : 1750905598770,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "034c0be9-5620-4d61-859d-cad4811e3c31",
+        "reference" : "5c3bcc00-3d02-4ca7-9004-29f8d7379726",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4b249c72-a96e-4b8c-9d59-9b8387831e06",
+              "reference" : "3d6f11fb-c441-4ee5-b096-2912433a78d6",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "5d201df9-1551-4534-b6bf-ef7d32dd2617",
+              "reference" : "7c19a9e4-ac62-461c-99e1-ba8f3b18e06d",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "a532af1b-e110-4df1-9503-1fdab1ec96d6",
+        "reference" : "83713f77-5dde-4ed7-b60a-6288e26a349c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,65 +123,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "85dc0fe3-a097-41a2-be55-2b7fb2a110fe",
+          "reference" : "1bd29f11-bad2-4ed5-bb25-33ff7be198a9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Confirmar recebimento do Learning Agreement devidamente assinado pelo coordenador do curso"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "3bfadd47-cadd-47b2-87e1-05acb2b04d6f",
-                "hasValidationError" : false,
-                "id" : "pbText"
-              }
-            ],
-            [
-              {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -189,9 +137,8 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -200,36 +147,85 @@
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Confirma?"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.confirmReceipt"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
                   }
                 },
-                "reference" : "8835c1b2-63e8-49cd-adba-17f6c2f0ba3c",
+                "reference" : "1a3543b6-bdf9-474a-961d-01dbf87160a1",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Learning Agreement assinado"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.attachmentDocumentInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "f6d9e727-108c-4b88-9b0c-e1d52346bdc3",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -307,7 +303,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a85ef281-3215-4df0-a8f7-31dec6b276e5",
+                "reference" : "63357f1a-6e70-4f35-a081-339f01ca5e7f",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -359,7 +355,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c9b2ef2f-e446-4a1c-8f97-eaa0ff866843",
+                "reference" : "4222452d-d57d-4c48-9e9d-bd4e21509a26",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -372,16 +368,16 @@
   ],
   "assets" : [
     {
-      "id" : "18c7cc58-8ccb-4dba-ad46-5c0d6d2579a1",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "38f39780-1eb3-435c-aca1-13cb5ab07530",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "81573134-a92b-4625-8ff3-82acdb2bac8b",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "196e2e72-f34b-4867-a287-d391e3170c2f",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -399,7 +395,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"confirmReceipt\" : false\r",
+        "  \"attachmentDocumentInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -423,7 +419,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tconfirmReceipt: $data.formInput.confirmReceipt",
+        "\tattachmentDocumentInput: $data.formInput.attachmentDocumentInput",
         "}"
       ],
       "exposed" : false
@@ -444,7 +440,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "4573fc02-a4db-47f7-bedd-79f38746a97f",
+  "uuid" : "949cf9b0-ff25-4d3d-b419-935d87628801",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

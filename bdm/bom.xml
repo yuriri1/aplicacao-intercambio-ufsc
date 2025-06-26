@@ -53,10 +53,7 @@
                 <field type="BOOLEAN" length="255" name="isFI" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isRegular" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="iaa" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="isEligibleFI" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="isEligibleIAA" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="isEligibleRegular" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="isEligibleHours" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isEligible" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
