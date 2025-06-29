@@ -10,3 +10,6 @@ O projeto consiste em uma aplicação destinada a modelar e automatizar processo
 Integrantes:
 - Luiz Fernando Aguilar Althoff
 - Yuri Rodrigues de Souza
+
+## Arquivo POM
+[POM](pom.xml)
