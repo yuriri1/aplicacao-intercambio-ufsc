@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "newForm",
   "name" : "newForm",
-  "lastUpdate" : 1751310357136,
+  "lastUpdate" : 1751389545957,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "d0b69a10-9c41-4b20-b3bd-b025358b630a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -131,10 +140,10 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 3,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "labelHidden" : {
@@ -155,7 +164,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Agreement Ok"
+                    "value" : "Contrato OK?"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -177,6 +186,90 @@
                 "reference" : "db799eb3-7a81-4fff-b686-a15be591425b",
                 "hasValidationError" : false,
                 "id" : "pbCheckbox",
+                "description" : ""
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 9,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "expression",
+                    "value" : "!formInput.agreementOk"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Matrícula"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.enrollment"
+                  },
+                  "required" : {
+                    "type" : "expression",
+                    "value" : "formInput.agreementOk"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "e74bf151-8e71-416a-9d48-55a14272d26f",
+                "hasValidationError" : false,
+                "id" : "pbInput",
                 "description" : ""
               }
             ],
@@ -216,7 +309,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Email Student"
+                    "value" : "Email do aluno"
                   },
                   "placeholder" : {
                     "type" : "constant"
@@ -302,7 +395,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Comment"
+                    "value" : "Observações sobre o contrato"
                   },
                   "placeholder" : {
                     "type" : "constant"
@@ -347,92 +440,6 @@
                   }
                 },
                 "reference" : "cd30fefe-dc53-4910-8cdd-378abca80689",
-                "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
-                  "readOnly" : {
-                    "type" : "expression",
-                    "value" : "!formInput.agreementOk"
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Enrollment"
-                  },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.enrollment"
-                  },
-                  "required" : {
-                    "type" : "expression",
-                    "value" : "formInput.agreementOk"
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
-                  }
-                },
-                "reference" : "e74bf151-8e71-416a-9d48-55a14272d26f",
                 "hasValidationError" : false,
                 "id" : "pbInput",
                 "description" : ""

@@ -8,7 +8,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_EyFzgETJEfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_EyFzgkTJEfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ScriptTask" xmi:id="_pu_1EETSEfC2T4K6-3nh9w" name="Converter Dados" outgoing="_JXUrEEU-EfC4JIcLCxZP3A" incoming="_ibsG4ETPEfC2T4K6-3nh9w">
+        <elements xmi:type="process:ScriptTask" xmi:id="_pu_1EETSEfC2T4K6-3nh9w" name="Converter Email" outgoing="_JXUrEEU-EfC4JIcLCxZP3A" incoming="_ibsG4ETPEfC2T4K6-3nh9w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BMz1QUTREfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BMz1QETREfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BMz1QkTREfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
@@ -45,7 +45,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_yRe_EETIEfC2T4K6-3nh9w" name="coordenacao" actor="_0QEysETIEfC2T4K6-3nh9w">
-        <elements xmi:type="process:Task" xmi:id="_kJoPYETPEfC2T4K6-3nh9w" name="Avaliar email" outgoing="_zJNSIEZFEfCXxaxeBhXx4Q" incoming="_VGhvYEZKEfCXxaxeBhXx4Q" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_kJoPYETPEfC2T4K6-3nh9w" name="Avaliar Learning Agreement" outgoing="_zJNSIEZFEfCXxaxeBhXx4Q" incoming="_VGhvYEZKEfCXxaxeBhXx4Q" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ibpDkUTPEfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ibpDkETPEfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ibpDkkTPEfC2T4K6-3nh9w" name="" content="" returnTypeFixed="true"/>
@@ -881,10 +881,10 @@
                 <expression xmi:type="expression:Expression" xmi:id="_UY2W_VXpEfCp8YFBXQvfnQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_UY2W_lXpEfCp8YFBXQvfnQ" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_UY2W_1XpEfCp8YFBXQvfnQ" name="&lt;pattern-expression>" content="&lt;p>Prezado(a) Coordenador,&lt;/p>&#xA;&#xA;&lt;p>A checagem de dados do aluno foi concluida e foi definido que:&lt;/p>&#xA;&#xA;&lt;p>${student.eligible}&lt;/p>&#xA;&#xA;&lt;p>Bonita&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_FLbGQFXwEfCp8YFBXQvfnQ" name="student.eligible" content="student.eligible" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_FLbGQVXwEfCp8YFBXQvfnQ" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.student.Student">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FLbGQlXwEfCp8YFBXQvfnQ" name="student" dataType="_ED5MlDEjEfCZHJMDKnrMDw" className="com.company.student.Student"/>
+                <expression xmi:type="expression:Expression" xmi:id="_UY2W_1XpEfCp8YFBXQvfnQ" name="&lt;pattern-expression>" content="&lt;p>Prezado(a) Coordenador,&lt;/p>&#xA;&#xA;&lt;p>A checagem de dados do aluno foi concluida e foi definido que:&lt;/p>&#xA;&#xA;&lt;p>${student.eligible}&lt;/p>&#xA;&#xA;&lt;p>Acesse o sistema de inscri&amp;ccedil;&amp;otilde;es online da SINTER e finalize o processo.&lt;/p>&#xA;&#xA;&lt;p>Bonita Application.&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_4uvagFacEfCnc9DVijDGaw" name="student.eligible" content="student.eligible" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_4uvagVacEfCnc9DVijDGaw" name="student" content="student" type="TYPE_VARIABLE" returnType="com.company.student.Student">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_4uvaglacEfCnc9DVijDGaw" name="student" dataType="_ED5MlDEjEfCZHJMDKnrMDw" className="com.company.student.Student"/>
                     </referencedElements>
                   </referencedElements>
                 </expression>
@@ -1306,7 +1306,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_yRe_F0TIEfC2T4K6-3nh9w" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_kJo2cUTPEfC2T4K6-3nh9w" type="3005" element="_kJoPYETPEfC2T4K6-3nh9w" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_kJo2c0TPEfC2T4K6-3nh9w" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kJo2ckTPEfC2T4K6-3nh9w" x="175" y="138" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kJo2ckTPEfC2T4K6-3nh9w" x="175" y="138" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_crFp3EZGEfCXxaxeBhXx4Q" type="3005" element="_crFCwEZGEfCXxaxeBhXx4Q" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_crFp3kZGEfCXxaxeBhXx4Q" type="5005"/>
@@ -1483,7 +1483,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_ftBhwEU-EfC4JIcLCxZP3A" x="-81" y="-19"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_ftA6sUU-EfC4JIcLCxZP3A" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ftA6skU-EfC4JIcLCxZP3A" points="[18, -3, -101, -261]$[134, -3, 15, -261]$[134, 254, 15, -4]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ftA6skU-EfC4JIcLCxZP3A" points="[20, -1, -100, -264]$[134, -1, 14, -264]$[134, 259, 14, -4]"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2NDWQEZIEfCXxaxeBhXx4Q" id="(0.16279069767441862,0.09302325581395349)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_zJN5MkZFEfCXxaxeBhXx4Q" type="4001" element="_zJNSIEZFEfCXxaxeBhXx4Q" source="_kJo2cUTPEfC2T4K6-3nh9w" target="_I-OrY0ZLEfCXxaxeBhXx4Q" roundedBendpointsRadius="10" routing="Rectilinear">
